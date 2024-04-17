@@ -11,7 +11,11 @@ https://fight-flash-fraud.readthedocs.io/en/stable/introduction.html#examples
 	sudo wipefs -a /dev/mmcblk0p1
 	sudo parted /dev/mmcblk0 --script -- mklabel gpt
 
-	or sudo parted /dev/mmcblk0 --script -- mklabel msdos
+or 
+
+	sudo parted /dev/mmcblk0 --script -- mklabel msdos
+
+or
 
 	sudo parted /dev/mmcblk0 --script -- mkpart primary fat32 1MiB 100%
 	sudo mkfs.vfat -F32 /dev/mmcblk0p1

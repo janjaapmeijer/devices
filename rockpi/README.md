@@ -87,13 +87,13 @@ https://wiki.omv-extras.org/doku.php?id=omv6:armbian_bullseye_install
   
 		wget https://dl.armbian.com/rockpi-4b/archive/Armbian_20.08.1_Rockpi-4b_buster_current_5.8.6.img.xz
 		sudo dd if=Armbian_20.08.1_Rockpi-4b_buster_current_5.8.6.img.xz of=/dev/nvme0n1 bs=1M
-
-  		# blkid /dev/mmcblk1p1
-  		# sudo dd if=/dev/disk/by-partuuid/6c80eaa4-01 conv=sync,noerror bs=4M of=/dev/nvme0n1p1
-  		# sudo umount /dev/nvme0n1p1
-  		# sudo e2fsck -f /dev/nvme0n1p1
-  		# sudo resize2fs /dev/nvme0n1p1
-  		# sudo e2fsck -f /dev/nvme0n1p1`
+	or
+  		blkid /dev/mmcblk1p1
+  		sudo dd if=/dev/disk/by-partuuid/6c80eaa4-01 conv=sync,noerror bs=4M of=/dev/nvme0n1p1
+  		sudo umount /dev/nvme0n1p1
+  		sudo e2fsck -f /dev/nvme0n1p1
+  		sudo resize2fs /dev/nvme0n1p1
+  		sudo e2fsck -f /dev/nvme0n1p1`
 
 # 7. login first time and kernel upgrade
 
